@@ -1,9 +1,17 @@
-#include <stdio.h> // Preprocessor directive that tells the compiler to
-		   // include the standard input/output library; provides
-		   // functions like 'printf' and 'scanf';
+#include <stdio.h> 
 
-// Function prototype---declares to compiler that there is a function named
-// 'hello', and that it takes no parameters and returns no output, hence void;
-// in C, the compiler needs to know about a function's existence (i.e. its
-// prototype 
+// Declare function prototype
 void hello();
+
+// Declare main function
+int main() {
+    // Call our function
+    hello();
+    // End main function execution, return 0 (i.e. success)
+    return 0;
+}
+
+// Function definition
+void hello() {
+    printf("Hello, World!\n");
+}
